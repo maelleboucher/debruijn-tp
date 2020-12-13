@@ -176,8 +176,7 @@ def path_average_weight(graph, path):
 
 def solve_bubble(graph, ancestor_node, descendant_node):
         """ 
-        probleme !
-    Supression d'une bulle
+        Supression d'une bulle
     """
         paths = list(nx.all_simple_paths(graph, source=ancestor_node, target=descendant_node))
         while len(paths) >= 2:
@@ -191,7 +190,6 @@ def solve_bubble(graph, ancestor_node, descendant_node):
 
 def simplify_bubbles(graph):
         """ 
-        probleme !
         Nettoyage d'un graph et suppression de bulles
     """
         starting_nodes = get_starting_nodes(graph)
@@ -217,7 +215,6 @@ def simplify_bubbles(graph):
 #Détection des pointes 
 def solve_entry_tips(graph, starting_nodes):
     """
-    probleme 
     Retourne graphe sans chemin d’entrée indésirable
     """
     
@@ -225,7 +222,6 @@ def solve_entry_tips(graph, starting_nodes):
 
 def solve_out_tips(graph, ending_nodes):
     """
-    probleme
     Retourne graphe sans chemin de sortie indésirable
     """
 
@@ -257,7 +253,6 @@ def get_sink_nodes(graph):
 
 def get_contigs(graph, starting_nodes, ending_nodes):
         """
-        probleme !
         Creation d'une liste de contigs en concatenant les kmers d'un chemin
         Retourne d'une lite de tuple (contig, longueur du contig)
     """
